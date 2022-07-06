@@ -1,0 +1,78 @@
+:root {
+  --B-Dimensions: 40px;
+}
+
+html,
+body {
+  background: #f4f8fb;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  height: 5%;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.top-nav .button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-areas: "text-list pic-grid ";
+  grid-template-columns: 2fr 6fr;
+  height: 95%;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  grid-area: text-list;
+  height: 100%;
+  border-right: 2px solid green;
+  position: fixed;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.list-item-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  margin: 10px 10px 0px 10px;
+  align-items: center;
+  background: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: var(--B-Dimensions);
+  font-size: 18px;
+}
+
+.B {
+  color: white;
+  background: rgb(255, 37, 37);
+  font-size: 30px;
+  height: var(--B-Dimensions);
+  width: var(--B-Dimensions);
+  text-align: center;
+  border-radius: 20%;
+}
+
+.list-message {
+}
+
+.pic-grid-container {
+  display: flex;
+  grid-area: pic-grid;
+  height: 100%;
+  padding-right: 10px;
+}
