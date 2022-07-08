@@ -18,8 +18,8 @@ function createListItem() {
   const msg = document.createElement("p");
 
   listItem.classList.add("list-item-container");
-  B.classList.add("B");
-  B.innerHTML = "B";
+  B.classList.add("P-emoji");
+  B.innerHTML = "P";
   msg.classList.add("list-message");
   msg.innerHTML = cesspool[Math.floor(Math.random() * cesspool.length)];
   listItem.appendChild(B);
